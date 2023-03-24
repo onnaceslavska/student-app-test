@@ -9,7 +9,7 @@ public class StudentAppTest {
     public void openStudentApp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        WebDriver() = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver();
         driver.get("http://acodemystudentapp-env.eba-d2vctp4d.eu-north-1.elasticbeanstalk.com/");
         driver.findElement(By.xpath("//div[@class='ant-table-title']//button")).click();
         driver.close();
